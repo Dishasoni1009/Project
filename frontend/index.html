@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Trust | Consultation, Design & Marketing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <img src="assests/landing_images/logo.svg" alt="Real Trust logo">
+            <span>Real Trust</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#clients">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="cta-actions">
+            <button class="btn ghost">Subscribe</button>
+            <button class="btn solid">Contact Us</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <div class="hero__text">
+                    <p class="eyebrow">Real Estate · Marketing · Design</p>
+                    <h1>Consultation, Design & Marketing</h1>
+                    <p class="lede">
+                        We craft memorable experiences for buyers through strategy,
+                        staging and marketing that sells homes faster.
+                    </p>
+                </div>
+                <div class="hero__form">
+                    <h3>Get a Free Consultation</h3>
+                    <input type="text" id="heroName" placeholder="Full Name" aria-label="Full name">
+                    <input type="email" id="heroEmail" placeholder="Email Address" aria-label="Email address">
+                    <input type="text" id="heroMobile" placeholder="Mobile Number" aria-label="Mobile number">
+                    <input type="text" id="heroCity" placeholder="Area / City" aria-label="Area or city">
+                    <button class="btn solid" onclick="submitContact()">Get Quick Quote</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="intro__text">
+                <p class="eyebrow">Not Your Average Realtor</p>
+                <h2>We help you stage, market and sell smarter.</h2>
+                <p>
+                    With local market expertise and a collaborative approach, we design
+                    listings that stand out and negotiate top-dollar deals.
+                </p>
+                <div class="intro__stats">
+                    <div>
+                        <strong>500+</strong>
+                        <span>Projects</span>
+                    </div>
+                    <div>
+                        <strong>98%</strong>
+                        <span>Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+            <div class="intro__gallery">
+                <div class="circle circle--main">
+                    <img src="assests/landing_images/pexels-brett-sayles-2881232.svg" alt="Team at work">
+                </div>
+                <div class="circle circle--secondary">
+                    <img src="assests/landing_images/pexels-brett-sayles-2881232-2.svg" alt="Team meeting">
+                </div>
+                <div class="circle circle--tertiary">
+                    <img src="assests/landing_images/pexels-brett-sayles-2881232-3.svg" alt="Client handshake">
+                </div>
+            </div>
+        </section>
+
+        <section class="why" id="services">
+            <h2>Why Choose Us?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon-circle">
+                        <img src="assests/landing_icons/circle-dollar-sign.svg" alt="ROI icon">
+                    </div>
+                    <h3>Potential ROI</h3>
+                    <p>We turn insights into action to maximize your return on every listing.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle">
+                        <img src="assests/landing_icons/paintbrush-2.svg" alt="Design icon">
+                    </div>
+                    <h3>Design</h3>
+                    <p>Modern staging, thoughtful layouts and visuals tailored to your buyers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle">
+                        <img src="assests/landing_icons/home.svg" alt="Marketing icon">
+                    </div>
+                    <h3>Marketing</h3>
+                    <p>Cross-channel campaigns that capture attention and drive showings.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about__media">
+                <div class="photo large">
+                    <img src="assests/landing_images/pexels-brett-sayles-2881232-1.svg" alt="Property tour">
+                </div>
+                <div class="photo small">
+                    <img src="assests/landing_images/pexels-andres-ayrton-6578391.svg" alt="Team discussion">
+                </div>
+                <div class="photo small">
+                    <img src="assests/landing_images/pexels-brett-sayles-2881232.svg" alt="Client meeting">
+                </div>
+            </div>
+            <div class="about__text">
+                <p class="eyebrow">About Us</p>
+                <h2>We blend strategy, creative and negotiation.</h2>
+                <p>
+                    Our team brings years of experience in real estate, design and marketing.
+                    We guide you from consultation to closing with clear communication,
+                    thoughtful staging and targeted campaigns.
+                </p>
+                <button class="btn ghost">Learn More</button>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="section-head">
+                <h2>Our Projects</h2>
+                <p>Handpicked work that showcases our staging, design and marketing results.</p>
+            </div>
+            <div class="card-grid" id="projectContainer"></div>
+        </section>
+
+        <section class="clients" id="clients">
+            <div class="section-head">
+                <h2>Happy Clients</h2>
+                <p>Stories from buyers, sellers and partners who trusted Real Trust.</p>
+            </div>
+            <div class="card-grid testimonials" id="clientContainer"></div>
+        </section>
+
+        <section class="cta" id="contact">
+            <div class="cta__content">
+                <div>
+                    <p class="eyebrow">Ready to talk?</p>
+                    <h2>Book your consultation and see how we can help.</h2>
+                </div>
+                <div class="cta__actions">
+                    <button class="btn ghost">Learn More</button>
+                    <button class="btn solid">Schedule</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="brand">
+                <img src="assests/landing_images/logo.svg" alt="Real Trust logo">
+                <span>Real Trust</span>
+            </div>
+            <div class="footer__links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#clients">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer__cta">
+                <input type="email" id="newsletterEmail" placeholder="Enter email address" aria-label="Newsletter email">
+                <button class="btn solid" onclick="subscribe()">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>© 2025 Real Trust. All rights reserved.</span>
+            <div class="socials">
+                <img src="assests/landing_icons/Linkedin.svg" alt="LinkedIn">
+                <img src="assests/landing_icons/Group.svg" alt="Social icon">
+                <img src="assests/landing_icons/Group-1.svg" alt="Social icon">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
